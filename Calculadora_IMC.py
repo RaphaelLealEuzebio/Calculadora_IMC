@@ -16,9 +16,20 @@ def calc_imc (altura, peso):
     else:
         print ('Obesidade Nivel 3')
 
+def indice_imc ():
+    print('CALCULADORA IMC')
+    print('='*30)
+    print('INFORME A SUA ALTURA EM METROS, EM SEGUIDA SEU PESO EM Kg.(exemp: 1.60 altura, peso: 50Kg.)')
+    print('IMC ABAIXO DE 17 = MUITO ABAIXO DO PESO')
+    print('IMC ENTRE 17 E 18,49 = ABAIXO DO PESO')
+    print('IMC ENTRE 18.5 E 24.99 = PESO NORMAL')
+    print('IMC ENTRE 25 E 29.99 = ACIMA DO PESO !')
+    print('IMC ENTRE 30 E 34,99 = OBESIDADE NIVEL 1')
+    print('IMC ENTRE 35 E 39,99 = OBESIDADE NIVEL 2')
+    print('IMC ACIMA DE 40 = OBESIDADE NIVEL 3')
+    print('='*30)
 
-print('CALCULADORA DE IMC\nINFORME SUA ALTURA EM METROS E EM SEGUIDA SEU PESO\nIMC ABAIXO DE 17 = MUITO ABAIXO DO PESO\nIMC ENTRE 17 E 18,49 = ABAIXO DO PESO\nIMC ENTRE 18.5 E 24.99 = PESO NORMAL\nIMC ENTRE 25 E 29.99 = ACIMA DO PESO !\nIMC ENTRE 30 E 34,99 = OBESIDADE NIVEL 1\nIMC ENTRE 35 E 39,99 = OBESIDADE NIVEL 2\nIMC ACIMA DE 40 = OBESIDADE NIVEL 3 ')
-
+indice_imc()
 altura = float (input('DIGITE A SUA ALTURA(m): '))
 peso = int(input('DIGITE SEU PESO (kg): '))
 calc_imc(altura,peso)
